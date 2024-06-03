@@ -18,7 +18,7 @@ Pizza.22 is a fully responsive, visually appealing web application that simulate
 
 ## 🚀 Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for development and testing.
 
 ### Prerequisites
 
@@ -40,7 +40,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 3. Open `index.html` in your web browser.
 
-That's it! No need for any server setup or dependencies. The project uses pure HTML, CSS, and JavaScript.
+That's it! You don't need any server setup or dependencies. The project uses pure HTML and CSS.
 
 ## 🎨 Project Structure
 
@@ -60,7 +60,7 @@ That's it! No need for any server setup or dependencies. The project uses pure H
 - Flexbox and Grid for layout
 - Media queries for responsiveness
 - Gradient backgrounds and shadows for visual appeal
-> Note: This is an educational project. Pizza delivery is not actually available.
+> Note: This is an educational project. Pizza delivery is not available.
 
 ## 🌐 Browser Support
 
@@ -74,4 +74,4 @@ Pizza.22 is designed to work flawlessly on all modern browsers:
 > ⚠️ Please note that there may be issues with the `scrollbar-width` CSS property on Mac.
 ---
 
-🍕 Enjoy your virtual pizza experience! Remember, it's all about learning, so even though you can't taste the pizza, you can savor the knowledge. 🎓
+🍕 Enjoy your virtual pizza experience! Remember, it's all about learning, so you can savour the knowledge even though you can't taste the pizza. 🎓
