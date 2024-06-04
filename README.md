@@ -29,11 +29,13 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Official-Echo/Pizza.22.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
    cd Pizza.22
    ```
@@ -47,6 +49,7 @@ That's it! You don't need any server setup or dependencies. The project uses pur
 - `index.html` - The main HTML file containing the structure of the web page
 - `styles.css` - The CSS file that handles all the styling and responsive design
 - `assets/` - Directory containing images and other static resources
+- `script.js` - JavaScript file containing dynamic functionality for the pizza ordering system
 
 ### HTML Structure
 
@@ -60,6 +63,17 @@ That's it! You don't need any server setup or dependencies. The project uses pur
 - Flexbox and Grid for layout
 - Media queries for responsiveness
 - Gradient backgrounds and shadows for visual appeal
+
+### JavaScript Functionality
+
+- Adding pizzas to the shopping cart
+- Updating the shopping cart in real-time
+- Changing the count of pizzas in the cart
+- Removing pizzas from the cart
+- Clearing the entire cart
+- Displaying pizzas based on filtering options
+- Saving chosen items in local storage via JSON
+
 > Note: This is an educational project. Pizza delivery is not available.
 
 ## 🌐 Browser Support
@@ -72,6 +86,7 @@ Pizza.22 is designed to work flawlessly on all modern browsers:
 - Edge (latest)
 
 > ⚠️ Please note that there may be issues with the `scrollbar-width` CSS property on Mac.
+
 ---
 
 🍕 Enjoy your virtual pizza experience! Remember, it's all about learning, so you can savour the knowledge even though you can't taste the pizza. 🎓
