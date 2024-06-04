@@ -1,6 +1,5 @@
 # Pizza.22 🍕
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://www.ecma-international.org/ecma-262/6.0/)
 [![HTML5](https://img.shields.io/badge/HTML-5-orange.svg)](https://www.w3.org/TR/html5/)
 [![CSS3](https://img.shields.io/badge/CSS-3-blue.svg)](https://www.w3.org/Style/CSS/specs.en.html)
 [![Responsive](https://img.shields.io/badge/Design-Responsive-green.svg)](https://en.wikipedia.org/wiki/Responsive_web_design)
