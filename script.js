@@ -21,8 +21,7 @@ const pizzaInfo = [
 			size: 40,
 			price: 169
 		},
-		is_new: true,
-		is_popular: true
+		is_new: true
 
 	},
 	{
@@ -170,6 +169,7 @@ const pizzaInfo = [
 	}
 ];
 
+let lastRowHeight = 3;
 let cart = JSON.parse(localStorage.getItem('cart')) || {};
 let totalSum = 0;
 
@@ -309,6 +309,22 @@ function displayPizzas(filter = null) {
 		grid.appendChild(div);
 	});
 	document.querySelector('.pizzacount').textContent = filteredPizzas.length;
+	const gridComputedStyle = window.getComputedStyle(grid);
+
+	const gridRowCount = gridComputedStyle.getPropertyValue("grid-template-rows").split(" ").length;
+
+	const footer = document.getElementsByClassName('aux-b')[1];
+
+	if (gridRowCount === 1) {
+		if (lastRowHeight !== 1) {
+			lastRowHeight = 1;
+			footer.style.marginTop = (document.documentElement.scrollHeight - document.getElementById('center-element').scrollHeight) + 20 + 'px';
+		}
+	}
+	else {
+		footer.style.marginTop = '0';
+		lastRowHeight = gridRowCount;
+	}
 }
 
 document.getElementById('clear-cart-items').addEventListener('click', clearCart);

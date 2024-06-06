@@ -28,6 +28,7 @@ html,
 body {
 	font-family: 'Helvetica';
 	scrollbar-width: none;
+	min-height:100vh;
 }
 
 button:hover,
@@ -99,6 +100,7 @@ button:hover,
 #aside-item-wrapper {
 	height: var(--aside-main-height);
 	background-color: var(--lighter-white);
+	overflow: hidden auto;
 }
 
 #aside-item-wrapper,
