@@ -331,6 +331,15 @@ document.getElementById('clear-cart-items').addEventListener('click', clearCart)
 
 document.getElementById('filter').addEventListener('click', (event) => {
 	if (event.target.tagName === 'SPAN') {
+		const spans = event.target.parentNode.getElementsByTagName('span');
+		for (let i = 0; i < spans.length; i++) {
+			spans[i].style.backgroundColor = 'unset';
+			spans[i].style.color = 'darkorange';
+		}
+
+		event.target.style.backgroundColor = 'darkorange';
+		event.target.style.borderRadius = '5px';
+		event.target.style.color = 'white';
 		const filterName = event.target.textContent;
 		const filterDisplay = filterName === 'Усі' || filterName === 'Вега' || filterName === "М\'ясні" ? filterName + ' піци' : 'Піци ' + filterName.toLowerCase();
 		document.querySelector('.pizza-filter-name').textContent = filterDisplay;
