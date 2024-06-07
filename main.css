@@ -68,6 +68,16 @@
 	left: -2px;
 }
 
+.order-button::after {
+	content: ' →';
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	transition: padding-left 0.5s;
+}
+
+.order-button:hover::after {
+	padding-left: 10px;
+}
+
 @media(max-width:1600px) {
 	.chartContainer {
 		width: 35vw !important;
