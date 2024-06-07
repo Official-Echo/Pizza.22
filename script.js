@@ -171,9 +171,19 @@ const pizzaInfo = [
 
 let lastRowHeight = 3;
 let cart = JSON.parse(localStorage.getItem('cart')) || {};
+let button = document.getElementById('to-report-button');
+if (JSON.stringify(cart) === "{}") {
+	button.className = 'faded enter-button';
+}
 let totalSum = 0;
 
 function updateCart() {
+	if (JSON.stringify(cart) === "{}") {
+		button.className = 'faded enter-button';
+	}
+	else{
+		button.className = 'enter-button';
+	}
 	const cartWrapper = document.getElementById('aside-item-wrapper');
 	cartWrapper.innerHTML = '';
 	totalSum = 0;
@@ -355,6 +365,9 @@ document.getElementById('filter').addEventListener('click', (event) => {
 		};
 		displayPizzas(mapping[filter]);
 	}
+});
+document.getElementById('to-report-button').addEventListener('click', () => {
+	window.location.href = `report.html?cart=${encodeURIComponent(JSON.stringify(cart))}`;
 });
 
 displayPizzas();
