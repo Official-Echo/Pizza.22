@@ -168,7 +168,7 @@ button:hover,
 
 .description-of-bought>.pricing>.number-of-ordered {
 	margin-top: 4px;
-	margin-left:50px;
+	margin-left: 50px;
 	padding: 0px 4px;
 	border-radius: 30%;
 	color: var(--lighter-white);
@@ -274,9 +274,13 @@ button:hover,
 	border-color: rgb(5, 147, 179);
 }
 
+#to-report-button::after {
+	background-image: linear-gradient(to bottom, rgb(5, 130, 158), rgb(5, 147, 159));
+}
+
 .faded {
 	border: none !important;
-	background:none !important;
+	background: none !important;
 	background-color: gray !important;
 	pointer-events: none;
 }
@@ -364,10 +368,27 @@ header #lower-part-of-icon {
 }
 
 .enter-button {
+	position: relative;
 	border: 1.5px solid rgb(229, 143, 0);
 	border-radius: 5px;
 	background: linear-gradient(rgb(239, 167, 54), rgb(233, 147, 0));
+	transition: background 1s;
 	color: var(--lighter-white);
+	z-index: 1;
+}
+
+.enter-button::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	background-image: linear-gradient(to bottom, rgb(237, 157, 29), rgb(204, 129, 0));
+	z-index: -1;
+	opacity: 0;
+	transition: opacity 200ms linear;
+}
+
+.enter-button:hover::after {
+	opacity: 1;
 }
 
 #top-info,
@@ -601,9 +622,11 @@ footer #warning {
 	padding: 0px 10px;
 	color: var(--lighter-white);
 	font-weight: bold;
+	z-index: 3;
 }
 
 .bottom-logo-edge {
+	z-index: 3;
 	position: fixed;
 	bottom: 115px;
 	margin-left: 5px;

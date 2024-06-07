@@ -69,13 +69,16 @@
 }
 
 .order-button::after {
-	content: ' →';
+	position: relative;
+	content: '';
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	transition: padding-left 0.5s;
 }
 
 .order-button:hover::after {
+	content: ' →';
 	padding-left: 10px;
+	background-image: none;
 }
 
 @media(max-width:1600px) {
